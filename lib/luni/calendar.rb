@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require_relative "calendar/version"
+require_relative "list_view"
 
 module Luni
   module Calendar
