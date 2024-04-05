@@ -1,7 +1,11 @@
-module Lumi
+module Luni
   class EventableExample
+    def name
+      "Bob"
+    end
+
     def to_calendar_event
-      # Implementation for converting to a calendar event
+      Luni::Event.new(starts_at: Time.now, ends_at: Time.now + 1, attributes: {name: name, model: self})
     end
   end
 
